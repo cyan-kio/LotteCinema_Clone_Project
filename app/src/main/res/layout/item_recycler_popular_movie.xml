@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginEnd="8dp"
+    android:paddingStart="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="210dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_popular_poster"
+            android:layout_width="130dp"
+            android:layout_height="210dp"
+            android:background="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_popular_poster_num"
+            android:layout_width="130dp"
+            android:layout_height="213dp"
+            android:text="1"
+            android:textSize="35dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:gravity="bottom|start"
+            android:paddingStart="5dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_popular_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="영화제목"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintEnd_toStartOf="@id/img_popular_like"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_popular_like"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/img_like_icon_off"
+            app:layout_constraintTop_toTopOf="@id/tv_popular_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tv_popular_title"
+            android:layout_marginEnd="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_popular_popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="인기점수"
+            android:textColor="#CACACA"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintEnd_toStartOf="@id/img_popular_like"
+            app:layout_constraintTop_toBottomOf="@id/tv_popular_title"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="7dp"
+            app:layout_constraintStart_toEndOf="@id/tv_popular_popularity"
+            app:layout_constraintTop_toTopOf="@id/tv_popular_popularity"
+            app:layout_constraintBottom_toBottomOf="@id/tv_popular_popularity"
+            android:background="#E8E8E8"
+            android:layout_marginStart="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_vote_icon"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:src="@drawable/img_vote_icon"
+            app:layout_constraintStart_toEndOf="@id/view"
+            app:layout_constraintTop_toTopOf="@id/tv_popular_popularity"
+            app:layout_constraintBottom_toBottomOf="@id/tv_popular_popularity"
+            android:layout_marginStart="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_popular_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="9.5"
+            android:textColor="#CACACA"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="@id/tv_popular_popularity"
+            app:layout_constraintStart_toEndOf="@id/img_vote_icon"
+            android:layout_marginStart="3dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ticketing"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn_ticketing_background"
+        android:text="예매하기"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:minHeight="27dp"
+        android:minWidth="95dp"/>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

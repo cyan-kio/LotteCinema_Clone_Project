@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_bottom_sheet_background"
+    tools:context=".main.fragment.TicketingFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_ticketing_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_ticketing_banner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영화관"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@id/img_ticketing_banner"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영화선택"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:minWidth="75dp"
+        android:minHeight="25dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/img_ticketing_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_btn_movie_choose_background"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_choose_theater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+  영화관 선택"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:minWidth="100dp"
+        android:minHeight="40dp"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_btn_ticketing_background"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#A5A5A5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_choose_theater"
+        android:layout_marginTop="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

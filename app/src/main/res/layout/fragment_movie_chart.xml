@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.fragment.MovieChartFragment">
+
+    <RadioGroup
+        android:id="@+id/radiogroup_movie_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radiobtn_ticketing_sequence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_radiobtn_background_chart_in"
+            android:button="@null"
+            android:text="예매순"
+            android:textSize="13sp"
+            android:minHeight="30dp"
+            android:minWidth="55dp"
+            android:gravity="center"
+            android:checked="true"
+            android:layout_marginEnd="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radiobtn_now_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_radiobtn_background_chart_in"
+            android:button="@null"
+            android:text="현재상영작"
+            android:textSize="13sp"
+            android:minHeight="30dp"
+            android:minWidth="80dp"
+            android:gravity="center"
+            android:checked="false"
+            android:layout_marginEnd="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radiobtn_upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_radiobtn_background_chart_in"
+            android:button="@null"
+            android:textSize="13sp"
+            android:text="상영예정작"
+            android:minHeight="30dp"
+            android:minWidth="80dp"
+            android:gravity="center"
+            android:checked="false"/>
+
+    </RadioGroup>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ticketing_rc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup_movie_chart"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/now_playing_rc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup_movie_chart"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="invisible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcoming_rc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup_movie_chart"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

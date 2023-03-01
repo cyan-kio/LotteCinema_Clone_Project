@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btm_navi_popcorn"
+        android:title="바로팝콘"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/img_btm_menu_one"/>
+
+    <item
+        android:id="@+id/btm_navi_event"
+        android:title="이벤트"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/img_btm_menu_two"/>
+
+    <item
+        android:id="@+id/btm_navi_ticketing"
+        android:title="바로예매"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/tm_navi_my"
+        android:title="마이"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/img_btm_menu_four"/>
+
+    <item
+        android:id="@+id/btm_navi_menu"
+        android:title="메뉴"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/img_btm_menu_five"/>
+
+</menu>

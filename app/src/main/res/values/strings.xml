@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LotteCinema_Clone_Project</string>
+    <string name="tv_app_name_one">LOTTE</string>
+    <string name="tv_app_name_two">C I N E M A</string>
+    <string name="tv_shake">흔들면 티켓이!</string>
+
+    <string name="pager">ViewPager ITEM</string>
+    <string name="chart">MovieChart ITEM</string>
+    <string name="event">Event ITEM</string>
+    <string name="feed">MovieFeed ITEM </string>
+    <string name="special">SpecialTheater ITEM</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">
+        com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
